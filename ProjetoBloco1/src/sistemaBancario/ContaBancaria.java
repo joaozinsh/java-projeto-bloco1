@@ -138,7 +138,7 @@ public class ContaBancaria {
 
 	//Metodo para atualiazr o saldo da conta poupança, porem esse metodo é efetivamente usado pela Classe ContaPoupanca
 	public boolean atualizarSaldo(int numero, String senha) {
-		return true;
+		return false;
 	}
 	
 }

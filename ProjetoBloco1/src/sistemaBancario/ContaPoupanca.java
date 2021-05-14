@@ -11,7 +11,7 @@ public class ContaPoupanca extends ContaBancaria {
 	public ContaPoupanca(String nome, String cpf, double renda, int tipo, String senha) {
 		
 		super(nome, cpf, renda, tipo, senha);
-		this.diaRendimento = 1 + (int) (Math.random() * 28);
+		this.diaRendimento = 1 + (int) (Math.random() * 28); //dia do rendimento é gerado aleatoriamente e pode ser entre o dia 1 e 28
 		
 		System.out.println("Dia do rendimento: "+diaRendimento);
 		System.out.println("Saldo: "+formatarMoeda(saldo));
@@ -35,7 +35,7 @@ public class ContaPoupanca extends ContaBancaria {
 				System.out.println("\nNovo saldo: "+formatarMoeda(saldo));
 				
 			} else {
-				System.err.println("\nHoje não é o dia de rendimento da sua conta, saldo inalterado.");
+				System.err.println("\nHoje não é o dia de rendimento da sua conta, saldo inalterado\n");
 			}
 		}
 		return valido;
